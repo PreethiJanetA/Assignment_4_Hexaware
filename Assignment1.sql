@@ -1,6 +1,10 @@
 create database Assignment1
 use Assignment1
-
+  ---Relations 
+---One User can send many Couriers One Courier is linked to one CourierService
+---One Employee can handle many Couriers 
+---One Courier can have one Payment.
+---One Location can have many Payments.
 -- USERS Table
 create table Users (
 UserID INT PRIMARY KEY,
