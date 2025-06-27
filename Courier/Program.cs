@@ -34,7 +34,7 @@ namespace Courier
                     Console.WriteLine("\n--- Courier Management Menu ---");
                     Console.WriteLine("1. View all couriers");
                     Console.WriteLine("2. Insert a courier");
-                    Console.WriteLine("3. Update courier status");
+                    Console.WriteLine("3. Update courier status( Scheduled/ In Transit / UnDelivered / Delivered)");
                     Console.WriteLine("4. Delete a courier");
                     Console.WriteLine("5. Exit");
                     Console.Write("Enter your choice: ");
@@ -128,56 +128,8 @@ namespace Courier
                 Console.WriteLine("Error occurred: " + ex.Message);
             }
         }
-        //    try
-        //    {
-        //        CourierServiceDb service = new CourierServiceDb(); // Connect to DB
-
-        //        // Example menu
-        //        bool running = true;
-        //        while (running)
-        //        {
-        //            Console.WriteLine("\n--- Courier Management Menu ---");
-        //            Console.WriteLine("1. View all couriers");
-        //            Console.WriteLine("2. Exit");
-        //            Console.Write("Enter your choice: ");
-        //            int choice = int.Parse(Console.ReadLine());
-
-        //            switch (choice)
-        //            {
-        //                case 1:
-        //                    service.GetAllCouriers();
-        //                    break;
-        //                case 2:
-        //                    Console.Write("Enter Tracking Number: ");
-        //                    string track = Console.ReadLine();
-        //                    Console.Write("Enter New Status: ");
-        //                    string newStatus = Console.ReadLine();
-        //                    service.UpdateCourierStatus(track, newStatus);
-        //                    break;
-
-        //                case 3:
-        //                    Console.Write("Enter Courier ID to delete: ");
-        //                    int courierId = int.Parse(Console.ReadLine());
-        //                    service.DeleteCourierById(courierId);
-        //                    break;
-
-        //                case 4:
-        //                    running = false;
-        //                    Console.WriteLine("Exiting...");
-        //                    break;
-
-        //                default:
-        //                    Console.WriteLine("Invalid choice.");
-        //                    break;
-        //            }
-        //        }
-        //    }
-        //    catch (System.Exception ex)
-        //    {
-        //        Console.WriteLine("Error occurred: " + ex.Message);
-        //    }
-        //}
-        //}
+       //================================================================================================================================================================
+       ///////  TASK 1 to 4 are Commented (for all task created a common static void main function and seperate functions below)
 
         //class program
         //{
@@ -242,6 +194,10 @@ namespace Courier
         //Console.WriteLine("\nTask 4.7: Find Similar Addresses");
         //Task4_FindSimilarAddresses();
         //}
+
+        // SEPERATE FUNCTIONS OF ALL TASKS STARTS FROM HERE ===============================================================================================
+
+        
         // Task 1.1: Order Status Check using if-else
         //public static void Task1_CheckOrderStatus(string status)
         //{
